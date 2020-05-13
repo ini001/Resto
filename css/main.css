@@ -1,0 +1,511 @@
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                line-height: 1.5;
+                padding: 0;
+                margin: 0;
+                background-color: #f4f4f4;
+            }
+            /* global */
+            
+            .container {
+                width: 80%;
+                margin: auto;
+                overflow: hidden;
+            }
+            
+            a:active {
+                color: #e8491d;
+            }
+            /* header */
+            
+            header {
+                background: #000;
+                color: #ffffff;
+                height: 70px;
+                position: fixed;
+                width: 100vw;
+            }
+            
+            header .container {
+                display: flex;
+                /* flex-flow: row nowrap; */
+                justify-content: space-between;
+            }
+            
+            header a {
+                color: #ffffff;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+            
+            header ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                /* flex-flow: row wrap; */
+            }
+            
+            header li {
+                list-style-type: none;
+                padding: 0 20px;
+            }
+            
+            header #branding h1 {
+                margin: 0;
+            }
+            
+            header nav {
+                float: right;
+                margin: 30px;
+            }
+            
+            header .current a {
+                color: #e8491d;
+                font-weight: bold;
+            }
+            
+            header a:hover {
+                color: #cccccc;
+                font-weight: bold;
+            }
+            /*home*/
+            
+            #home {
+                display: flex;
+                min-height: 80vh;
+                background: url('../img/background.jpg') no-repeat;
+                background-position: center center;
+                background-size: cover;
+                text-align: center;
+                align-items: center;
+                color: #ffffff;
+            }
+            
+            #home h4 {
+                margin-top: 100px;
+                font-size: 20px;
+                margin-bottom: 0px;
+            }
+            
+            #home h1 {
+                margin: 0px;
+                font-size: 60px;
+            }
+            
+            #home p {
+                font-size: 20px;
+            }
+            
+            #home button {
+                border: 2px solid #0000;
+                border-radius: 24px;
+                width: 100px;
+                background: yellow;
+            }
+            
+            #home button:hover {
+                width: 120px;
+                border-color: #85963E;
+            }
+            
+            #home button a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+            /* store */
+            
+            #store .container {
+                background: url(../img/story.jpg) no-repeat;
+                background-size: cover;
+                background-position: center;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+                height: 60vh;
+            }
+            
+            .store-item {
+                background: yellow;
+                width: 50%;
+                margin: auto;
+                text-align: center;
+            }
+            
+            .store-item h1 {
+                color: white;
+                margin-top: -30px;
+            }
+            
+            .store-item p {
+                padding: 10px;
+                line-height: 25px;
+            }
+            
+            .img-cut {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+            
+            .img-cut img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            
+            .img-cut p {
+                margin-top: -15px;
+            }
+            /* services */
+            
+            #services {
+                text-align: center;
+                width: 100%;
+            }
+            
+            #services .container h4 {
+                font-size: 20px;
+                margin-bottom: -20px;
+            }
+            
+            .service-img {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                min-width: 80%;
+            }
+            
+            .service-img div img {
+                width: 120px;
+                height: 120px;
+                border-radius: 50%;
+                padding: 18px;
+            }
+            /* reservation */
+            
+            #reservation {
+                margin: 50px;
+            }
+            
+            #reservation .container {
+                display: flex;
+                flex-direction: row;
+                min-width: 80vw;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .opening {
+                background: #FFE500;
+                text-align: center;
+                width: 40vw;
+                height: 50vh;
+            }
+            
+            .bookings {
+                background: white;
+                text-align: center;
+                min-height: 50vh;
+            }
+            
+            .input-name {
+                margin: 20px;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.986);
+            }
+            
+            .bookings input[type="submit"] {
+                border-radius: 24px;
+                width: 100px;
+                color: white;
+                cursor: pointer;
+                background: black;
+            }
+            
+            .bookings input[type="submit"]:hover {
+                opacity: 0.8;
+            }
+            /* event */
+            
+            #events {
+                text-align: center;
+            }
+            
+            #events .container h2 {
+                color: yellow;
+            }
+            
+            #events .container h1 {
+                font-weight: bold;
+            }
+            
+            .royal-cactus {
+                width: 40%;
+                height: 60vh;
+                float: left;
+            }
+            
+            .royal,
+            .cactus {
+                width: 40vw;
+                display: flex;
+                padding-top: 20px;
+            }
+            
+            .img-btn {
+                background: url(../img/cactus.jpg)no-repeat;
+                background-size: cover;
+                height: 20vh;
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .img-btn1 {
+                width: 40%;
+                height: 20vh;
+                background: url(../img/royal.jpg)no-repeat -60px 0;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .img-btn1 h1,
+            .img-btn h1 {
+                background: yellow;
+                width: 110px;
+                height: 100px;
+                font-size: 35px;
+                text-transform: uppercase;
+            }
+            
+            .royal-title,
+            .cactus-title {
+                padding-left: 20px;
+                padding-top: 50px;
+            }
+            
+            .royal-title h1,
+            .cactus-title h1 {
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+            
+            .royal-title p {
+                margin-top: -20px;
+            }
+            
+            .celebrity {
+                float: right;
+                width: 30%;
+                height: 45vh;
+                background: url(../img/celebrity.jpg) no-repeat;
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .celeb {
+                background: white;
+                width: 70%;
+                height: 70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            
+            .date {
+                background: yellow;
+                width: 100px;
+                height: 50px;
+                margin-bottom: 10px;
+            }
+            
+            .date h1 {
+                text-transform: uppercase;
+                font-size: 20px;
+            }
+            
+            .celeb h1 {
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            
+            #gallery {
+                text-align: center;
+            }
+            
+            #gallery h2 {
+                color: yellow;
+            }
+            
+            #gallery h1 {
+                text-transform: uppercase;
+            }
+            
+            .images {
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                object-fit: cover;
+            }
+            
+            .images div {
+                flex: auto;
+                width: 200px;
+                margin: 0.5vw;
+            }
+            
+            .images div img {
+                width: 100%;
+                height: auto;
+            }
+            
+            #gallery .container {
+                display: flex;
+                height: 50vh;
+            }
+            
+            .chef-person {
+                width: 60%;
+                margin: 20px;
+                height: 50vh;
+                display: flex;
+                position: relative;
+            }
+            
+            .chef-person img {
+                width: 70%;
+                display: flex;
+                height: 100%;
+            }
+            
+            .button_2 {
+                background: yellow;
+                border-radius: 24px;
+                height: 40px;
+                width: 200px;
+                position: absolute;
+                right: 50px;
+            }
+            
+            .button_2 a {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            
+            .wording {
+                width: 60%;
+                margin: 50px 10px;
+                background: yellow;
+                border-radius: 8px;
+                position: relative;
+                box-shadow: 4px 4px 5px #888888;
+            }
+            
+            .wording div {
+                height: 100%;
+                background: white;
+                border-radius: 8px;
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                box-shadow: 4px 4px 5px #888888;
+            }
+            
+            .wording div p {
+                line-height: 1.6rem;
+            }
+            /* newsletter */
+            
+            #newsletter .box {
+                background: yellow;
+                padding: 15px;
+                display: flex;
+                justify-content: space-around;
+            }
+            
+            .box form {
+                margin-top: 20px;
+            }
+            
+            .box form input[type="email"] {
+                padding: 4px;
+                height: 25px;
+                width: 250px;
+            }
+            
+            .button_3 {
+                height: 38px;
+                background: black;
+                border: none;
+                padding: 0 20px;
+                color: white;
+            }
+            /* footer */
+            
+            footer {
+                padding: 20px;
+                color: white;
+                background: black;
+                display: flex;
+                justify-content: center;
+                word-spacing: 0.4rem;
+            }
+            
+            @media screen and (max-width:768px) {
+                header {}
+                header .container {
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                }
+                .container #branding h1 {
+                    color: pink;
+                    background: red;
+                }
+                header nav {
+                    margin: 20px 30px;
+                }
+                header li {
+                    padding: 2px;
+                }
+                header li a {
+                    font-size: 8px;
+                    padding: 0;
+                }
+                .store-item p {
+                    line-height: 1rem;
+                }
+                #services .service-img {
+                    display: flex;
+                    flex-flow: row wrap;
+                }
+            }
+            
+            @media screen and (max-width:400px) {
+                .images div {
+                    margin: 0;
+                }
+                .images {
+                    padding: 0;
+                }
+                .store-item p {
+                    line-height: 0.8rem;
+                    margin-top: -30px;
+                }
+                .img-cut img {
+                    margin-top: -20px;
+                }
+            }
