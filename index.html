@@ -19,15 +19,21 @@
                 <h1>Resto</h1>
             </div>
             <nav>
-                <ul>
+                <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#store">store</a></li>
                     <li><a href="#services">services</a></li>
                     <li><a href="#reservation">reservation</a></li>
                     <li><a href="#events">Events</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
+
                 </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+
             </nav>
         </div>
     </header>
@@ -121,64 +127,99 @@
     <!-- event -->
     <section id="events">
         <div class="container">
-            <h2>Discover</h2>
-            <h1>OUR EVENT</h1>
-            <div class="royal-cactus">
-                <div class="royal">
-                    <div class="img-btn1">
-                        <h1>12 june</h1>
+            <div>
+                <h2>Discover</h2>
+                <h1>OUR EVENT</h1>
+            </div>
+            <div class="content">
+                <div class="royal-cactus">
+                    <div class="royal">
+                        <div class="img-btn1">
+                            <h1>12 june</h1>
+                        </div>
+                        <div class="royal-title">
+                            <h1>royal night</h1>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
                     </div>
-                    <div class="royal-title">
-                        <h1>royal night</h1>
-                        <p>Lorem, ipsum dolor.</p>
+                    <div class="cactus">
+                        <div class="img-btn">
+                            <h1>12 june</h1>
+                        </div>
+                        <div class="cactus-title">
+                            <h1>cactus night</h1>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="cactus">
-                    <div class="img-btn">
-                        <h1>12 june</h1>
-                    </div>
-                    <div class="cactus-title">
-                        <h1>cactus night</h1>
-                        <p>Lorem, ipsum dolor.</p>
+                <div class="celebrity">
+                    <div class="celeb">
+                        <div class="date">
+                            <h1>09 may</h1>
+                        </div>
+                        <h1>celebrity night</h1>
+                        <p>Lorem, ipsum.</p>
                     </div>
                 </div>
             </div>
-            <aside class="celebrity">
-                <div class="celeb">
-                    <div class="date">
-                        <h1>09 may</h1>
-                    </div>
-                    <h1>celebrity night</h1>
-                    <p>Lorem, ipsum.</p>
-                </div>
-            </aside>
         </div>
+
+
     </section>
     <!-- end of event -->
     <!-- gallery -->
     <section id="gallery">
         <h2>Discover</h2>
         <h1>Our Gallery</h1>
-
-        <i class="uil uil-angle-left"></i>
-        <div class="images">
-            <div><img src="./img/gallery-1.jpg" alt=" "></div>
-            <div><img src="./img/gallery-2.jpg" alt=" "></div>
-            <div><img src="./img/gallery-3.jpg" alt=" "></div>
-            <div><img src="./img/gallery-4.jpg" alt=" "></div>
-            <div><img src="./img/gallery-5.jpg" alt=" "></div>
-            <div><img src="./img/gallery-6.jpg" alt=" "></div>
-            <div><img src="./img/gallery-7.jpg" alt=" "></div>
-            <div><img src="./img/gallery-8.jpg" alt=" "></div>
+        <div class="content2">
+            <div class="images">
+                <div class="grid-img fade"><img src="./img/gallery-1.jpg" alt=" ">
+                    <p class="captionText">Chicken food salad</p>
+                </div>
+                <div class="grid-img fade"><img src="./img/gallery-2.jpg" alt=" ">
+                    <p class="captionText">Beef steak with sauce</p>
+                </div>
+                <div class="grid-img fade"><img src="./img/gallery-3.jpg" alt=" ">
+                    <p class="captionText">Steak food</p>
+                </div>
+                <div class="grid-img fade"><img src="./img/gallery-4.jpg" alt=" ">
+                    <p class="captionText">spaghetti </p>
+                </div>
+                <div class="grid-img fade"><img src="./img/gallery-5.jpg" alt=" ">
+                    <p class="captionText">Meat burger with coleslaw</p>
+                </div>
+                <div class="grid-img fade"><img src="./img/gallery-6.jpg" alt=" ">
+                    <p class="captionText">Garlic shrimp dish</p>
+                </div>
+                <div class="grid-img fade"><img src="./img/gallery-7.jpg" alt=" ">
+                    <p class="captionText">Rice and curry sauce</p>
+                </div>
+                <div class="grid-img fade"><img src="./img/gallery-8.jpg" alt=" ">
+                    <p class="captionText"></p>
+                </div>
+                <div class="slide-controls">
+                    <button id="prev-btn" onclick="plusIndex(-1)"><i class="uil uil-angle-left"></i></button>
+                    <button id="next-btn" onclick="plusIndex(1)"><i class=" uil uil-angle-right "></i></button>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <span class="dash" currentSlide(1)></span>
+                <span class="dash" currentSlide(2)></span>
+                <span class="dash" currentSlide(3)></span>
+                <span class="dash" currentSlide(4)></span>
+                <span class="dash" currentSlide(5)></span>
+                <span class="dash" currentSlide(6)></span>
+                <span class="dash" currentSlide(7)></span>
+                <span class="dash" currentSlide(8)></span>
+            </div>
         </div>
 
-        <i class="uil uil-angle-right"></i>
         <div class="container">
-            <div class="chef-person">
-                <img src="./img/blur-breakfast-close-up-dairy-product-376464.jpg" alt=" ">
+            <div class="chef-person ">
+                <img src="./img/blur-breakfast-close-up-dairy-product-376464.jpg " alt=" ">
                 <button class="button_2 "><a href="# ">View All Gallery</a></button>
             </div>
-            <div class="wording">
+            <div class="wording ">
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quia excepturi alias nulla praesentium molestiae non suscipit voluptatem, minus vero itaque voluptatibus. Architecto placeat consectetur laboriosam corporis unde quae
                         libero.
@@ -189,15 +230,16 @@
             </div>
         </div>
     </section>
+
     <!-- end of Gallery -->
     <!-- newsletter -->
-    <section id="newsletter">
-        <div class="items">
-            <div class="box">
+    <section id="newsletter container ">
+        <div class="items ">
+            <div class="box ">
                 <h1>NEWSLETTER</h1>
                 <form>
-                    <input type="email" placeholder="Enter Email... ">
-                    <button type="submit" class="button_3 ">Subscribe</button>
+                    <input type="email " placeholder="Enter Email... ">
+                    <button type="submit " class="button_3 ">Subscribe</button>
                 </form>
             </div>
         </div>

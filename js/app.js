@@ -1,23 +1,65 @@
-/*eventListeners();
+eventListeners();
 
 function eventListeners() {
     const ui = new UI()
 
+    //navbar
+    document.querySelector('.burger').addEventListener('click', function() {
+        ui.navSlide();
+        ui.togglebar();
 
-    //background hover
-    document.querySelector('.eat').addEventListener('mouseover', function() {
-        ui.hoverChange();
+        const links = document.querySelectorAll('.nav-links li')
+        for (let i = 0; i < links.length; i++) {
+            ui.navLinks(links[i], i);
+        }
     })
-    document.querySelector('.drink').addEventListener('mouseover', function() {
-        ui.hoverChange();
-    })
-
-    document.querySelector('.visit').addEventListener('mouseover', function() {
-        ui.hoverChange();
-    })
-
-
 }
+var index = 1;
+
+
+showImage(1);
+
+function showImage(n) {
+
+    var i;
+    var x = document.getElementsByClassName('grid-img');
+    // var dash = document.getElementsByClassName('dash')
+    if (n > length) {
+        index = 1;
+    }
+    if (n < 1) {
+        index = x.length;
+    }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+    }
+    // for (var i = 0; i < dash.length; i++) {
+    //     dash[i].className = dash[i].className.replace('active', '');
+    // };
+    x[index - 1].style.display = 'block';
+    // dash[index - 1].className += 'active';
+}
+
+function plusIndex(n) {
+    index = index + n;
+    showImage(index);
+}
+autoSlide();
+
+function autoSlide() {
+    var i;
+    var x = document.getElementsByClassName('grid-img');
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = 'none';
+    }
+    if (index > x.length) {
+        index = 1
+    }
+    x[index - 1].style.display = 'block';
+    index++;
+    setTimeout(autoSlide, 2000);
+}
+
 
 
 
@@ -25,23 +67,23 @@ function eventListeners() {
 
 
 //constructor function
-function UI() {
+function UI() {}
 
+//navbar
+UI.prototype.navSlide = function() {
+    document.querySelector('.nav-links').classList.toggle('nav-active');
 }
-//background hover
-UI.prototype.hoverChange = function() {
-    document.querySelector('.header').classList.toggle('header-show');
 
+//navlinks
+UI.prototype.navLinks = function(link, index) {
+    if (link.style.animation) {
+        link.style.animation = ''
+    } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0}s`;
+    }
 }
-UI.prototype.hoverChange = function() {
-    document.querySelector('.header').classList.toggle('header-drink');
 
+// toggle
+UI.prototype.togglebar = function() {
+    document.querySelector('.burger').classList.toggle('toggle');
 }
-UI.prototype.hoverChange = function() {
-    document.querySelector('.header').classList.toggle('header-visit');
-
-}
-/*alt
-UI.prototype.hoverChange = function(){
-
-} */
