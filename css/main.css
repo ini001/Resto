@@ -1,695 +1,703 @@
-                        body {
-                            font-family: Arial, Helvetica, sans-serif;
-                            font-size: 15px;
-                            line-height: 1.5;
-                            padding: 0;
-                            margin: 0;
-                            background-color: #f4f4f4;
-                        }
-                        /* global */
-                        
-                        .container {
-                            width: 80%;
-                            margin: auto;
-                            overflow: hidden;
-                        }
-                        
-                        a:active {
-                            color: #e8491d;
-                        }
-                        /* header */
-                        
-                        header {
-                            background: #000;
-                            color: #ffffff;
-                            height: 70px;
-                            position: fixed;
-                            width: 100vw;
-                        }
-                        
-                        header .container {
-                            display: flex;
-                            width: 100%;
-                            justify-content: space-around;
-                        }
-                        
-                        header a {
-                            color: #ffffff;
-                            text-decoration: none;
-                            text-transform: uppercase;
-                            font-size: 14px;
-                        }
-                        
-                        header ul {
-                            margin: 0;
-                            padding: 0;
-                            display: flex;
-                            width: 80%;
-                        }
-                        
-                        header li {
-                            list-style-type: none;
-                            padding: 0 10px;
-                        }
-                        
-                        header #branding h1 {
-                            margin: 0;
-                        }
-                        
-                        header nav {
-                            margin: 30px;
-                        }
-                        
-                        header .current a {
-                            color: #e8491d;
-                            font-weight: bold;
-                        }
-                        
-                        header a:hover {
-                            color: #cccccc;
-                            font-weight: bold;
-                        }
-                        
-                        .burger {
-                            display: none;
-                            cursor: pointer;
-                        }
-                        
-                        .burger div {
-                            width: 25px;
-                            height: 3px;
-                            background-color: rgb(226, 226, 226);
-                            margin: 5px;
-                            transition: all 0.3s ease;
-                        }
-                        
-                        .toggle .line1 {
-                            transform: rotate(-45deg) translate(-5px, 6px)
-                        }
-                        
-                        .toggle .line2 {
-                            opacity: 0;
-                        }
-                        
-                        .toggle .line3 {
-                            transform: rotate(45deg) translate(-5px, -6px)
-                        }
-                        /*home*/
-                        
-                        #home {
-                            display: flex;
-                            min-height: 100vh;
-                            background: url('../img/background.jpg') no-repeat;
-                            background-position: center center;
-                            background-size: cover;
-                            text-align: center;
-                            color: #ffffff;
-                        }
-                        
-                        #home h4 {
-                            margin-top: 100px;
-                            font-size: 20px;
-                            margin-bottom: 0px;
-                            color: yellow;
-                        }
-                        
-                        #home h1 {
-                            margin: 0px;
-                            font-size: 60px;
-                        }
-                        
-                        #home p {
-                            font-size: 20px;
-                        }
-                        
-                        #home button {
-                            border: 1px solid #0000;
-                            border-radius: 24px;
-                            width: 100px;
-                            background: yellow;
-                        }
-                        
-                        #home button:hover {
-                            width: 120px;
-                            border-color: #85963E;
-                        }
-                        
-                        #home button a {
-                            text-decoration: none;
-                            font-weight: bold;
-                        }
-                        /* store */
-                        
-                        #store .container {
-                            background: url(../img/story.jpg) no-repeat;
-                            background-size: cover;
-                            background-position: center;
-                            margin-top: 50px;
-                            display: flex;
-                            justify-content: center;
-                            height: 100vh;
-                        }
-                        
-                        .store-item {
-                            background: yellow;
-                            width: 50%;
-                            margin: auto;
-                            text-align: center;
-                        }
-                        
-                        .store-item h1 {
-                            color: white;
-                            margin-top: -30px;
-                        }
-                        
-                        .store-item p {
-                            padding: 10px;
-                            line-height: 25px;
-                        }
-                        
-                        .img-cut {
-                            display: flex;
-                            align-items: center;
-                            flex-direction: column;
-                        }
-                        
-                        .img-cut img {
-                            width: 100px;
-                            height: 100px;
-                            border-radius: 50%;
-                        }
-                        
-                        .img-cut p {
-                            margin-top: -15px;
-                        }
-                        /* services */
-                        
-                        #services {
-                            text-align: center;
-                            height: 80vh;
-                        }
-                        
-                        #services .container h4 {
-                            font-size: 20px;
-                            margin-bottom: -20px;
-                            color: yellow;
-                        }
-                        
-                        .service-img {
-                            display: flex;
-                            width: 100%;
-                            margin: auto;
-                            justify-content: space-between;
-                        }
-                        
-                        .service-img div {
-                            width: 100%;
-                        }
-                        
-                        .service-img div img {
-                            width: 50%;
-                            border-radius: 50%;
-                            padding: 20px;
-                            transition: all 0.8s ease-in-out;
-                            opacity: 1;
-                        }
-                        
-                        .service-img div img:hover {
-                            width: 150px;
-                            height: 180px;
-                            transform: scale(1.2);
-                            border-radius: 50px;
-                            opacity: 0.9;
-                        }
-                        /* reservation */
-                        
-                        #reservation {
-                            margin: 50px;
-                        }
-                        
-                        #reservation .container {
-                            display: flex;
-                            flex-direction: row;
-                            min-width: 100vw;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        
-                        .opening {
-                            background: #FFE500;
-                            text-align: center;
-                            width: 40%;
-                            min-height: 50vh;
-                        }
-                        
-                        .bookings {
-                            background: white;
-                            text-align: center;
-                            min-height: 50vh;
-                            width: 60%;
-                        }
-                        
-                        .input-name {
-                            margin: 20px;
-                            border-top: 0;
-                            border-left: 0;
-                            border-right: 0;
-                            border-bottom: 2px solid rgba(0, 0, 0, 0.986);
-                        }
-                        
-                        .bookings input[type="submit"] {
-                            border-radius: 24px;
-                            width: 100px;
-                            color: white;
-                            cursor: pointer;
-                            background: black;
-                        }
-                        
-                        .bookings input[type="submit"]:hover {
-                            opacity: 0.8;
-                        }
-                        /* event */
-                        
-                        #events {
-                            text-align: center;
-                        }
-                        
-                        #events .container {
-                            width: 100%;
-                            height: 100vh;
-                            ;
-                        }
-                        
-                        #events .container h2 {
-                            color: yellow;
-                        }
-                        
-                        #events .container h1 {
-                            font-weight: bold;
-                        }
-                        
-                        .content {
-                            display: flex;
-                        }
-                        
-                        .royal-cactus {
-                            display: flex;
-                            flex-direction: column;
-                            max-width: 40%;
-                        }
-                        
-                        .royal,
-                        .cactus {
-                            width: 40vw;
-                            display: flex;
-                            padding-top: 20px;
-                        }
-                        
-                        .img-btn {
-                            background: url(../img/cactus.jpg)no-repeat;
-                            background-size: cover;
-                            height: 20vh;
-                            width: 30%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        
-                        .img-btn1 {
-                            width: 40%;
-                            height: 20vh;
-                            background: url(../img/royal.jpg)no-repeat -60px 0;
-                            background-size: cover;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        
-                        .img-btn1 h1,
-                        .img-btn h1 {
-                            background: yellow;
-                            width: 110px;
-                            height: 100px;
-                            font-size: 35px;
-                            text-transform: uppercase;
-                        }
-                        
-                        .royal-title,
-                        .cactus-title {
-                            padding-left: 20px;
-                            padding-top: 50px;
-                        }
-                        
-                        .royal-title h1,
-                        .cactus-title h1 {
-                            text-transform: uppercase;
-                            font-weight: bold;
-                        }
-                        
-                        .royal-title p {
-                            margin-top: -20px;
-                        }
-                        
-                        .celebrity {
-                            width: 50%;
-                            height: 45vh;
-                            background: url(../img/celebrity.jpg) no-repeat;
-                            background-size: cover;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                        }
-                        
-                        .celeb {
-                            background: white;
-                            width: 70%;
-                            height: 70%;
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: flex-start;
-                            align-items: center;
-                        }
-                        
-                        .date {
-                            background: yellow;
-                            width: 100px;
-                            height: 50px;
-                            margin-bottom: 10px;
-                        }
-                        
-                        .date h1 {
-                            text-transform: uppercase;
-                            font-size: 20px;
-                        }
-                        
-                        .celeb h1 {
-                            text-transform: uppercase;
-                            margin-bottom: 30px;
-                        }
-                        /* gallery section */
-                        
-                        #gallery {
-                            text-align: center;
-                            margin: 0 auto;
-                            display: flex;
-                            flex-direction: column;
-                        }
-                        
-                        #gallery h2 {
-                            color: yellow;
-                        }
-                        
-                        #gallery h1 {
-                            text-transform: uppercase;
-                        }
-                        
-                        #gallery .images {
-                            margin: 0 auto;
-                            width: 60%;
-                            height: 500px;
-                            position: relative;
-                            border: 1px solid black;
-                            margin-bottom: 20px;
-                        }
-                        
-                        .grid-img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                        
-                        .grid-img img {
-                            width: 100%;
-                            height: 100%;
-                        }
-                        
-                        .images div {
-                            position: absolute;
-                        }
-                        
-                        .grid-img p {
-                            background-color: #000000;
-                            position: absolute;
-                            color: #cccccc;
-                            bottom: 0;
-                            width: 100%;
-                            height: 40px;
-                            margin: 0;
-                            padding: 10px 0;
-                            font-size: 15px;
-                            text-transform: uppercase;
-                        }
-                        
-                        .slide-controls {
-                            position: absolute;
-                            top: 50%;
-                            left: 0;
-                            transform: translateY(-50%);
-                            width: 100%;
-                            display: flex;
-                            justify-content: space-between;
-                            align-items: center;
-                        }
-                        
-                        .dash {
-                            width: 30px;
-                            height: 1px;
-                            display: inline-block;
-                            background: gray;
-                            padding: 5px;
-                        }
-                        
-                        .fade {
-                            animation-name: fade;
-                            animation-duration: 1s;
-                        }
-                        
-                        @keyframes fade {
-                            from {
-                                opacity: 0.4
-                            }
-                            to {
-                                opacity: 1
-                            }
-                        }
-                        
-                        .active,
-                        .dash:hover {
-                            background: yellow;
-                        }
-                        
-                        #gallery .container {
-                            display: flex;
-                            height: 50vh;
-                            flex-wrap: wrap;
-                            margin-top: 100px;
-                        }
-                        
-                        #next-btn,
-                        #prev-btn {
-                            cursor: pointer;
-                            background: transparent;
-                            font-size: 50px;
-                            border: none;
-                            padding: 10px;
-                            color: white;
-                        }
-                        
-                        #next-btn:focus,
-                        #prev-btn:focus {
-                            outline: none;
-                        }
-                        
-                        .chef-person {
-                            width: 60%;
-                            margin: 20px;
-                            height: 50vh;
-                            display: flex;
-                            position: relative;
-                        }
-                        
-                        .chef-person img {
-                            width: 70%;
-                            display: flex;
-                            height: 100%;
-                        }
-                        
-                        .button_2 {
-                            background: yellow;
-                            border-radius: 24px;
-                            height: 40px;
-                            width: 200px;
-                            position: absolute;
-                            right: 50px;
-                        }
-                        
-                        .button_2 a {
-                            text-decoration: none;
-                            color: black;
-                            font-weight: bold;
-                        }
-                        
-                        .wording {
-                            width: 60%;
-                            margin: 50px 10px;
-                            background: yellow;
-                            border-radius: 8px;
-                            position: relative;
-                            box-shadow: 4px 4px 5px #888888;
-                        }
-                        
-                        .wording div {
-                            height: 100%;
-                            background: white;
-                            border-radius: 8px;
-                            position: absolute;
-                            left: 20px;
-                            top: 20px;
-                            box-shadow: 4px 4px 5px #888888;
-                        }
-                        
-                        .wording div p {
-                            line-height: 1.6rem;
-                        }
-                        /* newsletter */
-                        
-                        #newsletter .box {
-                            background: yellow;
-                            padding: 15px;
-                            display: flex;
-                            justify-content: space-around;
-                        }
-                        
-                        .box form {
-                            margin-top: 20px;
-                        }
-                        
-                        .box form input[type="email"] {
-                            padding: 4px;
-                            height: 25px;
-                            width: 250px;
-                        }
-                        
-                        .button_3 {
-                            height: 38px;
-                            background: black;
-                            border: none;
-                            padding: 0 20px;
-                            color: white;
-                        }
-                        /* footer */
-                        
-                        footer {
-                            padding: 20px;
-                            color: white;
-                            background: black;
-                            display: flex;
-                            justify-content: center;
-                            word-spacing: 0.4rem;
-                        }
-                        
-                        @media screen and (max-width:768px) {
                             body {
-                                overflow-x: hidden;
+                                font-family: Arial, Helvetica, sans-serif;
+                                font-size: 15px;
+                                line-height: 1.5;
+                                padding: 0;
+                                margin: 0;
+                                background-color: #f4f4f4;
                             }
-                            .nav-links {
-                                position: absolute;
-                                right: 0;
-                                height: 92vh;
-                                top: 8vh;
-                                background-color: rgba(0, 0, 0, 0.8);
+                            /* global */
+                            
+                            .container {
+                                width: 80%;
+                                margin: auto;
+                                overflow: hidden;
+                            }
+                            
+                            a:active {
+                                color: #e8491d;
+                            }
+                            /* header */
+                            
+                            header {
+                                background: #000;
+                                color: #ffffff;
+                                height: 70px;
+                                position: fixed;
+                                width: 100vw;
+                                z-index: 9999999999999;
+                            }
+                            
+                            header .container {
                                 display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                justify-content: space-evenly;
-                                width: 40%;
-                                transform: translateX(100%);
-                                transition: transform 0.5s ease-in;
+                                width: 100%;
+                                justify-content: space-around;
                             }
-                            .nav-links li {
+                            
+                            header a {
+                                color: #ffffff;
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                font-size: 14px;
+                            }
+                            
+                            header ul {
+                                margin: 0;
+                                padding: 0;
+                                display: flex;
+                                width: 80%;
+                            }
+                            
+                            header li {
+                                list-style-type: none;
+                                padding: 0 10px;
+                            }
+                            
+                            header #branding h1 {
+                                margin: 0;
+                            }
+                            
+                            header nav {
+                                margin: 30px;
+                            }
+                            
+                            header .current a {
+                                color: #e8491d;
+                                font-weight: bold;
+                            }
+                            
+                            header a:hover {
+                                color: #cccccc;
+                                font-weight: bold;
+                            }
+                            
+                            .burger {
+                                display: none;
+                                cursor: pointer;
+                            }
+                            
+                            .burger div {
+                                width: 25px;
+                                height: 3px;
+                                background-color: rgb(226, 226, 226);
+                                margin: 5px;
+                                transition: all 0.3s ease;
+                            }
+                            
+                            .toggle .line1 {
+                                transform: rotate(-45deg) translate(-5px, 6px)
+                            }
+                            
+                            .toggle .line2 {
                                 opacity: 0;
                             }
-                            .burger {
-                                display: block;
+                            
+                            .toggle .line3 {
+                                transform: rotate(45deg) translate(-5px, -6px)
                             }
-                            .nav-active {
-                                transform: translateX(0%);
-                            }
-                            #services {
-                                height: 100%;
-                            }
-                            .service-img {
-                                flex-direction: column;
-                            }
-                            #events .container {
-                                height: 200vh;
-                                margin-bottom: 50px;
-                            }
-                            .service-img {
-                                width: 60%;
-                            }
-                            #events .content {
+                            /*home*/
+                            
+                            #home {
                                 display: flex;
-                                flex-direction: column;
+                                min-height: 100vh;
+                                background: url('../img/background.jpg') no-repeat;
+                                background-position: center center;
+                                background-size: cover;
+                                text-align: center;
+                                color: #ffffff;
                             }
-                            .royal-cactus {
-                                width: 100vh;
+                            
+                            #home h4 {
+                                margin-top: 100px;
+                                font-size: 20px;
+                                margin-bottom: 0px;
+                                color: yellow;
+                            }
+                            
+                            #home h1 {
+                                margin: 0px;
+                                font-size: 60px;
+                            }
+                            
+                            #home p {
+                                font-size: 20px;
+                            }
+                            
+                            #home button {
+                                border: 1px solid #0000;
+                                border-radius: 24px;
+                                width: 100px;
+                                background: yellow;
+                            }
+                            
+                            #home button:hover {
+                                width: 120px;
+                                border-color: #85963E;
+                            }
+                            
+                            #home button a {
+                                text-decoration: none;
+                                font-weight: bold;
+                            }
+                            /* store */
+                            
+                            #store .container {
+                                background: url(../img/story.jpg) no-repeat;
+                                background-size: cover;
+                                background-position: center;
+                                margin-top: 50px;
                                 display: flex;
+                                justify-content: center;
+                                height: 100vh;
                             }
-                            .royal,
-                            .cactus {
-                                width: 70vh;
-                                display: flex;
-                                flex-direction: column;
-                            }
-                            .royal-title,
-                            .cactus-title {
-                                margin-left: -80px;
-                            }
-                            .img-btn,
-                            .img-btn1 {
-                                width: 100%;
-                                height: 40vh;
-                            }
-                            .celebrity {
-                                width: 100%;
-                                height: 40vh;
+                            
+                            .store-item {
+                                background: yellow;
+                                width: 50%;
+                                margin: auto;
                                 text-align: center;
                             }
+                            
+                            .store-item h1 {
+                                color: white;
+                                margin-top: -30px;
+                            }
+                            
+                            .store-item p {
+                                padding: 10px;
+                                line-height: 25px;
+                            }
+                            
+                            .img-cut {
+                                display: flex;
+                                align-items: center;
+                                flex-direction: column;
+                            }
+                            
+                            .img-cut img {
+                                width: 100px;
+                                height: 100px;
+                                border-radius: 50%;
+                            }
+                            
+                            .img-cut p {
+                                margin-top: -15px;
+                            }
+                            /* services */
+                            
+                            #services {
+                                position: relative;
+                                text-align: center;
+                                height: 80vh;
+                            }
+                            
+                            #services .container h4 {
+                                font-size: 20px;
+                                margin-bottom: -20px;
+                                color: yellow;
+                            }
+                            
+                            .service-img {
+                                display: flex;
+                                width: 100%;
+                                margin: auto;
+                                justify-content: space-between;
+                            }
+                            
+                            .service-img div {
+                                width: 100%;
+                            }
+                            
+                            .service-img div img {
+                                width: 50%;
+                                border-radius: 50%;
+                                padding: 20px;
+                                transition: all 0.8s ease-in-out;
+                                opacity: 1;
+                            }
+                            
+                            .service-img div img:hover {
+                                width: 150px;
+                                height: 180px;
+                                transform: scale(1.2);
+                                border-radius: 50px;
+                                opacity: 0.9;
+                            }
+                            /* reservation */
+                            
+                            #reservation {
+                                margin: 50px;
+                            }
+                            
                             #reservation .container {
                                 display: flex;
-                                flex-direction: column;
-                                margin: auto;
-                            }
-                            .opening {
-                                margin-bottom: 30px;
-                                width: 70%;
+                                flex-direction: row;
+                                min-width: 100vw;
                                 justify-content: center;
+                                align-items: center;
                             }
-                            #gallery .container {
-                                width: 80vh;
-                                height: 150vh;
+                            
+                            .opening {
+                                background: #FFE500;
+                                text-align: center;
+                                width: 40%;
+                                min-height: 50vh;
+                            }
+                            
+                            .bookings {
+                                background: white;
+                                text-align: center;
+                                min-height: 50vh;
+                                width: 60%;
+                            }
+                            
+                            .input-name {
+                                margin: 20px;
+                                border-top: 0;
+                                border-left: 0;
+                                border-right: 0;
+                                border-bottom: 2px solid rgba(0, 0, 0, 0.986);
+                            }
+                            
+                            .bookings input[type="submit"] {
+                                border-radius: 24px;
+                                width: 100px;
+                                color: white;
+                                cursor: pointer;
+                                background: black;
+                            }
+                            
+                            .bookings input[type="submit"]:hover {
+                                opacity: 0.8;
+                            }
+                            /* event */
+                            
+                            #events {
+                                text-align: center;
+                            }
+                            
+                            #events .container {
+                                width: 100%;
+                                height: 100vh;
+                                ;
+                            }
+                            
+                            #events .container h2 {
+                                color: yellow;
+                            }
+                            
+                            #events .container h1 {
+                                font-weight: bold;
+                            }
+                            
+                            .content {
                                 display: flex;
                             }
-                            .chef-person {
-                                margin-bottom: -200px;
+                            
+                            .royal-cactus {
+                                display: flex;
+                                flex-direction: column;
+                                max-width: 40%;
+                            }
+                            
+                            .royal,
+                            .cactus {
+                                width: 40vw;
+                                display: flex;
+                                padding-top: 20px;
+                            }
+                            
+                            .img-btn {
+                                background: url(../img/cactus.jpg)no-repeat;
+                                background-size: cover;
+                                height: 20vh;
+                                width: 30%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .img-btn1 {
+                                width: 40%;
+                                height: 20vh;
+                                background: url(../img/royal.jpg)no-repeat -60px 0;
+                                background-size: cover;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .img-btn1 h1,
+                            .img-btn h1 {
+                                background: yellow;
+                                width: 110px;
+                                height: 100px;
+                                font-size: 35px;
+                                text-transform: uppercase;
+                            }
+                            
+                            .royal-title,
+                            .cactus-title {
+                                padding-left: 20px;
+                                padding-top: 50px;
+                            }
+                            
+                            .royal-title h1,
+                            .cactus-title h1 {
+                                text-transform: uppercase;
+                                font-weight: bold;
+                            }
+                            
+                            .royal-title p {
+                                margin-top: -20px;
+                            }
+                            
+                            .celebrity {
+                                width: 50%;
+                                height: 45vh;
+                                background: url(../img/celebrity.jpg) no-repeat;
+                                background-size: cover;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .celeb {
+                                background: white;
+                                width: 70%;
+                                height: 70%;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                align-items: center;
+                            }
+                            
+                            .date {
+                                background: yellow;
+                                width: 100px;
+                                height: 50px;
+                                margin-bottom: 10px;
+                            }
+                            
+                            .date h1 {
+                                text-transform: uppercase;
+                                font-size: 20px;
+                            }
+                            
+                            .celeb h1 {
+                                text-transform: uppercase;
+                                margin-bottom: 30px;
+                            }
+                            /* gallery section */
+                            
+                            #gallery {
+                                text-align: center;
+                                margin: 0 auto;
+                                display: flex;
+                                flex-direction: column;
+                            }
+                            
+                            #gallery h2 {
+                                color: yellow;
+                            }
+                            
+                            #gallery h1 {
+                                text-transform: uppercase;
+                            }
+                            
+                            #gallery .images {
+                                margin: 0 auto;
+                                width: 60%;
+                                height: 500px;
+                                position: relative;
+                                border: 1px solid black;
+                                margin-bottom: 20px;
+                            }
+                            
+                            .grid-img {
                                 width: 100%;
-                                position: unset;
+                                height: 100%;
                             }
-                            .wording {
-                                margin-top: -80px;
+                            
+                            .grid-img img {
+                                width: 100%;
+                                height: 100%;
                             }
+                            
+                            .images div {
+                                position: absolute;
+                            }
+                            
+                            .grid-img p {
+                                background-color: #000000;
+                                position: absolute;
+                                color: #cccccc;
+                                bottom: 0;
+                                width: 100%;
+                                height: 40px;
+                                margin: 0;
+                                padding: 10px 0;
+                                font-size: 15px;
+                                text-transform: uppercase;
+                            }
+                            
+                            .slide-controls {
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                width: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                            }
+                            
+                            .dash {
+                                width: 30px;
+                                height: 1px;
+                                display: inline-block;
+                                background: gray;
+                                padding: 5px;
+                            }
+                            
+                            .fade {
+                                animation-name: fade;
+                                animation-duration: 1s;
+                            }
+                            
+                            @keyframes fade {
+                                from {
+                                    opacity: 0.4
+                                }
+                                to {
+                                    opacity: 1
+                                }
+                            }
+                            
+                            .active,
+                            .dash:hover {
+                                background: yellow;
+                            }
+                            
+                            #gallery .container {
+                                display: flex;
+                                height: 50vh;
+                                flex-wrap: wrap;
+                                margin-top: 100px;
+                            }
+                            
+                            #next-btn,
+                            #prev-btn {
+                                cursor: pointer;
+                                background: transparent;
+                                font-size: 50px;
+                                border: none;
+                                padding: 10px;
+                                color: white;
+                            }
+                            
+                            #next-btn:focus,
+                            #prev-btn:focus {
+                                outline: none;
+                            }
+                            
+                            .chef-person {
+                                width: 60%;
+                                margin: 20px;
+                                height: 50vh;
+                                display: flex;
+                                position: relative;
+                            }
+                            
+                            .chef-person img {
+                                width: 70%;
+                                display: flex;
+                                height: 100%;
+                            }
+                            
                             .button_2 {
-                                display: none;
+                                background: yellow;
+                                border-radius: 24px;
+                                height: 40px;
+                                width: 200px;
+                                position: absolute;
+                                right: 50px;
                             }
-                        }
-                        
-                        @keyframes navLinkFade {
-                            from {
-                                opacity: 0;
-                                transform: translateX(50px);
+                            
+                            .button_2 a {
+                                text-decoration: none;
+                                color: black;
+                                font-weight: bold;
                             }
-                            to {
-                                opacity: 1;
-                                transform: translateX(0px);
+                            
+                            .wording {
+                                width: 60%;
+                                margin: 50px 10px;
+                                background: yellow;
+                                border-radius: 8px;
+                                position: relative;
+                                box-shadow: 4px 4px 5px #888888;
                             }
-                        }
+                            
+                            .wording div {
+                                height: 100%;
+                                background: white;
+                                border-radius: 8px;
+                                position: absolute;
+                                left: 20px;
+                                top: 20px;
+                                box-shadow: 4px 4px 5px #888888;
+                            }
+                            
+                            .wording div p {
+                                line-height: 1.6rem;
+                            }
+                            /* newsletter */
+                            
+                            #newsletter .box {
+                                background: yellow;
+                                padding: 15px;
+                                display: flex;
+                                justify-content: space-around;
+                            }
+                            
+                            .box form {
+                                margin-top: 20px;
+                            }
+                            
+                            .box form input[type="email"] {
+                                padding: 4px;
+                                height: 25px;
+                                width: 250px;
+                            }
+                            
+                            .button_3 {
+                                height: 38px;
+                                background: black;
+                                border: none;
+                                padding: 0 20px;
+                                color: white;
+                            }
+                            /* footer */
+                            
+                            footer {
+                                padding: 20px;
+                                color: white;
+                                background: black;
+                                display: flex;
+                                justify-content: center;
+                                word-spacing: 0.4rem;
+                            }
+                            
+                            @media screen and (max-width:768px) {
+                                body {
+                                    overflow-x: hidden;
+                                }
+                                .nav-links {
+                                    position: absolute;
+                                    right: 0;
+                                    height: 92vh;
+                                    top: 8vh;
+                                    background-color: rgba(0, 0, 0, 0.8);
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: space-evenly;
+                                    width: 30%;
+                                    transform: translateX(100%);
+                                    transition: transform 0.5s ease-in;
+                                    z-index: 99999999999;
+                                }
+                                .nav-links li {
+                                    opacity: 0;
+                                }
+                                .burger {
+                                    display: block;
+                                }
+                                .nav-active {
+                                    transform: translateX(0%);
+                                }
+                                #services {
+                                    height: 100%;
+                                }
+                                .service-img {
+                                    flex-direction: column;
+                                }
+                                #events .container {
+                                    height: 200vh;
+                                    margin-bottom: 50px;
+                                }
+                                .service-img {
+                                    width: 60%;
+                                }
+                                #events .content {
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .royal-cactus {
+                                    width: 100vh;
+                                    display: flex;
+                                }
+                                .royal,
+                                .cactus {
+                                    width: 70vh;
+                                    display: flex;
+                                    flex-direction: column;
+                                }
+                                .royal-title,
+                                .cactus-title {
+                                    margin-left: -80px;
+                                }
+                                .img-btn,
+                                .img-btn1 {
+                                    width: 100%;
+                                    height: 40vh;
+                                }
+                                .celebrity {
+                                    width: 100%;
+                                    height: 40vh;
+                                    text-align: center;
+                                }
+                                #reservation .container {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin: auto;
+                                }
+                                .opening {
+                                    margin-bottom: 30px;
+                                    width: 70%;
+                                    justify-content: center;
+                                }
+                                #gallery .container {
+                                    width: 80vh;
+                                    height: 150vh;
+                                    display: flex;
+                                }
+                                .chef-person {
+                                    margin-bottom: -200px;
+                                    width: 100%;
+                                    position: unset;
+                                }
+                                .wording {
+                                    margin-top: -80px;
+                                }
+                                .button_2 {
+                                    display: none;
+                                }
+                                #gallery .images {
+                                    margin: 0 auto;
+                                    width: 100%;
+                                    height: 500px;
+                                }
+                            }
+                            
+                            @keyframes navLinkFade {
+                                from {
+                                    opacity: 0;
+                                    transform: translateX(50px);
+                                }
+                                to {
+                                    opacity: 1;
+                                    transform: translateX(0px);
+                                }
+                            }
